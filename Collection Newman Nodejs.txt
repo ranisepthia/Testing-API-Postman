@@ -1,0 +1,54 @@
+Microsoft Windows [Version 10.0.22621.1702]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Lawencon>node -v
+v18.16.0
+
+C:\Users\Lawencon>npm install -g newman
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+
+added 112 packages in 36s
+
+6 packages are looking for funding
+  run `npm fund` for details
+npm notice
+npm notice New minor version of npm available! 9.5.1 -> 9.6.7
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v9.6.7
+npm notice Run npm install -g npm@9.6.7 to update!
+npm notice
+
+C:\Users\Lawencon\Documents\tes postman>newman run POSTMAN_TEST_COLLECTION.postman_collection.json -e url.postman_environment.json
+newman
+
+POSTMAN TEST COLLECTION
+
+→ GET USER
+  GET https://jsonplaceholder.typicode.com/users [200 OK, 6.59kB, 176ms]
+  √  Status code is 200
+  √  Check if user with id1 is Leanne Graham
+  √  Check if street with id1 is Kulas Light
+
+→ POST USER
+  POST https://jsonplaceholder.typicode.com/users [201 Created, 1.62kB, 602ms]
+
+┌─────────────────────────┬─────────────────────┬────────────────────┐
+│                         │            executed │             failed │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│              iterations │                   1 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│                requests │                   2 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│            test-scripts │                   1 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│      prerequest-scripts │                   0 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│              assertions │                   3 │                  0 │
+├─────────────────────────┴─────────────────────┴────────────────────┤
+│ total run duration: 1006ms                                         │
+├────────────────────────────────────────────────────────────────────┤
+│ total data received: 6.25kB (approx)                               │
+├────────────────────────────────────────────────────────────────────┤
+│ average response time: 389ms [min: 176ms, max: 602ms, s.d.: 213ms] │
+└────────────────────────────────────────────────────────────────────┘
